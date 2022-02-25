@@ -28,7 +28,6 @@ public class JavaExercises {
 class MakePatternOf{
 
 
-    // Function to print the letter A
     static void letterA()
     {
         System.out.print("\n");
@@ -52,7 +51,7 @@ class MakePatternOf{
     }
 
 
-    // Function to print the letter J
+
     static void letterJ()
     {
         System.out.print("\n");
