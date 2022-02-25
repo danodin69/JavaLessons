@@ -2,23 +2,29 @@ package com.danodin;
 
 public class JavaExercises {
     public static void runTask() {
+        System.out.println("\n");
 
         System.out.println("Exercise 1.1: \n");
         System.out.println("Welcome to Java");
         System.out.println("Welcome to Computer Science");
         System.out.println("Programming is fun\n");
 
+        System.out.println("\n");
         System.out.println("Exercise 1.2: \n");
         for (int i=0; i<5; i++){
             System.out.println("Java a is cool programming language");
         }
+
+        System.out.println("\n");
         System.out.println("Exercise 1.3: \n");
         MakePatternOf.letterJ();
         MakePatternOf.letterA();
         MakePatternOf.letterV();
         MakePatternOf.letterA();
 
-
+        System.out.println("\n");
+        System.out.println("Exercise 1.4: \n");
+        PrintATable.table();
 
 
     }
@@ -98,6 +104,25 @@ class MakePatternOf{
                 else
                     System.out.print(" ");
             System.out.print("\n");
+        }
+    }
+}
+
+
+class PrintATable{
+    
+    static void table(){
+        
+        String[] [] multiplicationTable = new String[5][];
+        multiplicationTable[0] = new String [] {"a","a^2","a^3"};
+        multiplicationTable[1] = new String [] {"1","1","1"};
+        multiplicationTable[2] = new String [] {"2","4","8"};
+        multiplicationTable[3] = new String [] {"3","9","27"};
+        multiplicationTable[4] = new String [] {"4","16","64"};
+        
+        for (String[] row: multiplicationTable){
+            System.out.format("%15s %15s %15s %n", row);
+            
         }
     }
 }
